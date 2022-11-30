@@ -1,0 +1,72 @@
+header h1 {
+    background-color: red;
+    /* width: auto; */
+    /* height: 40%; */
+    text-align: right;
+    margin: 0%;
+    padding: 10px;
+}
+
+body {
+    margin: 0%;
+    height: auto;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0%;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+.menu li:nth-child(2):hover #dropdown1,
+.menu li:nth-child(3):hover #dropdown2 {
+    display: block;
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#dropdown1,
+#dropdown2 {
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    top: 42.5px;
+    background-color: whitesmoke;
+    padding: 0%;
+}
+
+#dropdown1 li,
+#dropdown2 li {
+    display: block;
+}
+
+#dropdown1 li a,
+#dropdown2 li a {
+    background-color: whitesmoke;
+    color: darkblue;
+}
+
+#dropdown1 li a:hover,
+#dropdown2 li a:hover {
+    background-color: goldenrod;
+}
+
+#navigate {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
